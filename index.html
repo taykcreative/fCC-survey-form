@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employment Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<!--Created by Tay (HTMLmom)-->
+<body>
+
+    <!--START LINKEDIN WATERMARK-->
+<span><a href="https://www.linkedin.com/in/taykcreative/"><img src="https://cdn.pixabay.com/photo/2017/10/20/03/13/linked-in-2869962_960_720.png" id="linkedin"></a></span>
+    <!--END LINKEDIN WATERMARK-->
+
+    <div class="wrapper">
+        <h1 id="title">Applicant Survey</h1>
+            <p id="description">If you are interested in working for our company, please fill out this short survey.<br>If you are a considerable applicant, we will be in touch with you via Email.</p>
+                <form id="survey-form">
+                    <div class="div-about">
+                        <label for="name" id="name-label" type="name">Name:</label>
+                            <input type="text" required name="name" id="name" placeholder="First &amp; Last">
+                        <label for="email" id="email-label" type=email>Email:</label>
+                            <input type="email" required name="email" id="email" placeholder="your@email.com">
+                        <label for="number" id="number-label" >Age:</label>
+                            <input type="number" name="number" id="number" value="" min="18" max="99" placeholder="18-99" />
+                    </div>
+                    <div class="div-position"><label>Position Applying For:</label><br>
+                        <input type="radio" name="position" value="intern" /> Intern<br>
+                        <input type="radio" name="position" value="junior" /> Junior Web Developer<br>
+                        <input type="radio" name="position" value="dev" /> Web Developer<br>
+                        <input type="radio" name="position" value="senior" /> Senior Web Developer
+                    </div>
+                    <div class="div-knowledge"><label>Knowledge:</label>
+                        <span id="check">(check all that apply)</span><br>
+                            <input type="checkbox" value="HTML5" />HTML5 
+                            <input type="checkbox" value="CSS" />CSS
+                            <input type="checkbox" value="JS" />JS
+                    </div>
+                    <div class="div-experience">
+                        <label for="select">Years of Experience:</label><br>
+                        <select id="dropdown">
+                            <option value="low">1-5 years</option>
+                            <option value="medium">5-10 years</option>
+                            <option value="high">10+ years</option>
+                            <option value="other">Other (specify below)</option>
+                        </select><br>
+                        <label>Other:</label><br>
+                            <textarea></textarea>
+                    </div>  
+                    <div class="div-why"><label>Why should we consider you for hire?</label><br>
+                        <textarea id="whycons"></textarea>
+                    </div>
+                    <div id="butn">
+                    <button id="submit"> Submit </button>
+                    </div>
+                </form>
+    </div>
+
+    <footer>
+        Created by Tay aka @HTMLmom
+    </footer>
+    </body>
+</html>

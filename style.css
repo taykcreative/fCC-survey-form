@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+#linkedin {
+    width: 1cm;
+    opacity: 0.5;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #007e7e, #013d3d);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.wrapper {
+    background-color: #fff;
+    max-width: 70%;
+    min-width: 390px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 10px #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title'
+                        'disc'
+                        'survey';
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#description {
+    grid-area: disc;
+    margin: -15px auto 15px;
+    text-align: center;
+    max-width: 80%;
+}
+
+#survey-form {
+    grid-area: survey;
+}
+
+div {
+    padding: 5px;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+input {
+    max-width: 400px;
+    border: 1px inset #555;
+    border-radius: 5%;
+}
+
+input::placeholder {  
+    text-align: center; 
+} 
+
+.div-about {
+    border-top: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: '. name-label .'
+                          '. name .'
+                         '. email-label .' 
+                          '. email .'
+                          '. number-label .'
+                           '. number .';
+}
+
+#name-label {grid-area: name-label;
+    text-align: center;
+}
+
+#name {grid-area: name;}
+
+#email-label {grid-area:email-label;
+    text-align: center;
+}
+
+#email {grid-area:email}
+
+#number-label {grid-area:number-label;
+    text-align: center;}
+
+#number {
+    grid-area:number;
+    width: 50px;
+    margin: auto;
+}
+
+.div-position {
+    border-top: 1px solid lightgray;
+}
+
+.div-knowledge {
+    border-top: 1px solid lightgray;
+}
+
+#check {
+    font-size: 10px;
+}
+
+.div-experience {
+    border-top: 1px solid lightgray;
+}
+
+#other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.div-why {
+    border-top: 1px solid lightgray;
+    width: 100%;
+}
+
+textarea {
+    border: 1px inset #555;
+}
+
+#whycons {
+    width: 60%;
+    height: 40px;
+
+}
+
+
+#submit {
+    color: white;
+    background-color: #0b00a0;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    border: 1px outset #555;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-style: italic;
+}
